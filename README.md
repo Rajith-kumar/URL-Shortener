@@ -179,17 +179,15 @@ http://127.0.0.1:5000/analytics/a
 
 ## 📸 Screenshots (Add Your Images Here)
 
-### 🔹 Postman Request
+### 🔹 Postman Request ans Short URL Response
 
-![Postman Screenshot](images/postman.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d0d1f821-a55d-4dec-8adf-2229c3b06689" />
 
-### 🔹 Short URL Response
 
-![Response Screenshot](images/response.png)
+### 🔹 urls in Database
 
-### 🔹 Analytics Output
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/515f12af-a9f7-4e5a-954b-4468b02b7ee8" />
 
-![Analytics Screenshot](images/analytics.png)
 
 ---
 
