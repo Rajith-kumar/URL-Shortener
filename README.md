@@ -3,6 +3,16 @@
 A full-stack URL shortener web application built using Flask and MySQL. This project allows users to convert long URLs into short, shareable links and track their usage with analytics.
 
 ---
+## 🧠 Working
+
+First, a POST request is sent using Postman containing the long URL.  
+The Flask backend receives the request and stores the URL in a MySQL database, where a unique auto-increment ID is generated.  
+
+This ID is then converted into a short code using Base62 encoding and updated in the database.  
+
+When a user accesses the short URL, the system retrieves the corresponding original URL from the database and redirects the user to it.  
+Additionally, each access is recorded to track click analytics.
+
 
 ## 📌 Features
 
