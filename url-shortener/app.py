@@ -4,13 +4,13 @@ from utils import encode_base62
 
 app = Flask(__name__)
 
-# 🔹 Home Route
+#  Home Route
 @app.route("/")
 def home():
     return "URL Shortener Running 🚀"
 
 
-# 🔹 Shorten URL API
+# Shorten URL API
 @app.route("/shorten", methods=["POST"])
 def shorten_url():
     data = request.get_json()
@@ -23,7 +23,7 @@ def shorten_url():
     db = get_db()
     cursor = db.cursor()
 
-    # 🔥 Check if URL already exists
+    #  Check if URL already exists
     cursor.execute("SELECT short_code FROM urls WHERE long_url=%s", (long_url,))
     existing = cursor.fetchone()
 
@@ -56,7 +56,7 @@ def shorten_url():
     })
 
 
-# 🔹 Redirect API
+# Redirect API
 @app.route("/<short_code>")
 def redirect_url(short_code):
     db = get_db()
@@ -82,7 +82,7 @@ def redirect_url(short_code):
         return "URL not found", 404
 
 
-# 🔹 Analytics API (🔥 RESUME BOOST)
+# Analytics API
 @app.route("/analytics/<short_code>")
 def analytics(short_code):
     db = get_db()
